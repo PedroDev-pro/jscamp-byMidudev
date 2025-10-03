@@ -1,1 +1,0 @@
-Full stack course by MiduDev making an job website named DevJobs
