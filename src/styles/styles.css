@@ -63,7 +63,8 @@ header {
   justify-content: space-between;
   gap: 2rem;
 
-  h2 {
+  span {
+    margin-top: 1rem;
     font-size: 1.25rem;
     font-weight: 700;
     color: var(--text-primary);
@@ -72,7 +73,7 @@ header {
 
 /* Navegación del header a otras páginas */
 nav {
-  align-items: center;
+  align-items: flex-start;
   gap: 1rem;
   display: flex;
 
