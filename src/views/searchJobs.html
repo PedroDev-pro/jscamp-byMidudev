@@ -7,6 +7,9 @@
     <title>DevJobs - Empleos</title>
     <link rel="stylesheet" href="/src/styles/searchJobs.css">
     <script type="module" src="/src/js/searchJobs.js"></script>
+    <script type="module" src="/src/js/app.js"></script>
+    <script type="module" src="/src/js/fetch-data.js"></script>
+    <script type="module" src="/src/js/filters.js"></script>
 </head>
 
 <body>
@@ -53,7 +56,7 @@
                 </div>
 
                 <div class="search-filters">
-                    <select name="technology" id="filter-technology">
+                    <select name="technology" id="technology">
                         <option value="">Tecnología</option>
                         <option value="javascript">JavaScript</option>
                         <option value="python">Python</option>
@@ -80,15 +83,16 @@
                     </select>
                 </div>
             </form>
+            <span id="filter-selected-value"></span>
         </section>
 
         <section>
             <h2>Resultados de búsqueda</h2>
 
             <div class="jobs-listings">
-                <article class="job-listing-card">
+                <article data-modalidad="remoto" class="job-listing-card">
                     <div>
-                        <h3>Ingeniero de Software</h3>
+                        <a href="/src/views/jobDetails.html"><h3>Ingeniero de Software</h3></a>
                         <small>Tech Solutions Inc. | Remoto</small>
                         <p>Buscamos un ingeniero de software con experiencia en desarrollo web y conocimientos en
                             JavaScript, React
@@ -100,7 +104,7 @@
                     <button class="button-apply-job" id="boton-importante">Aplicar</button>
                 </article>
 
-                <article class="job-listing-card">
+                <article data-modalidad="cdmx" class="job-listing-card">
                     <div>
                         <h3>Analista de Datos</h3>
                         <small>Data Driven Co. | Ciudad de México</small>
@@ -111,7 +115,7 @@
                     <button class="button-apply-job">Aplicar</button>
                 </article>
 
-                <article class="job-listing-card">
+                <article data-modalidad="Guadalajara" class="job-listing-card">
                     <div>
                         <h3>Desarrollador de Aplicaciones Móviles</h3>
                         <small>Mobile Apps Ltd. | Guadalajara</small>
@@ -122,7 +126,7 @@
                     <button class="button-apply-job">Aplicar</button>
                 </article>
 
-                <article class="job-listing-card">
+                <article data-modalidad="remoto" class="job-listing-card">
                     <div>
                         <h3>Ingeniero de DevOps</h3>
                         <small>Cloud Services SA | Remoto</small>
