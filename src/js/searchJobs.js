@@ -1,16 +1,3 @@
-const jobsListingSection = document.querySelector('.jobs-listings')
-
-jobsListingSection.addEventListener('click', function(event) {
-  const element = event.target
-
-  if (element.classList.contains('button-apply-job')) {
-    element.textContent = '¡Aplicado!'
-    element.classList.add('is-applied')
-    element.disabled = true
-  }
-})
-
-
 //Función que filtra las ofertas de trabajo por tecnología
 const filterTechnology = document.querySelector('#technology');
 
@@ -34,6 +21,6 @@ const experienceLevel = document.querySelector('#experience-level');
 
 experienceLevel.addEventListener('change', function (event) {
     const selectedExperienceLevel = event.target.value;
-    console.log('Selected expewrience level:', selectedExperienceLevel);
+    console.log('Selected experience level:', selectedExperienceLevel);
     // Aquí puedes agregar la lógica para filtrar las ofertas de trabajo según la tecnología seleccionada
 });
